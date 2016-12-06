@@ -1,0 +1,417 @@
+body {
+    background-color: black;
+    line-height: 36pt;
+    color: white;
+}
+
+.pin {
+    width: 40px;
+}
+
+#menu {
+    pposition: fixed;
+    list-style-type: none;
+
+}
+
+.logo{
+    color: #fff100;
+    font-size: 19pt;
+}
+
+li {
+    float: left;
+    font-family: 'Caviar Dreams';
+
+}
+
+.linktodetail {
+    text-decoration: underline;
+}
+
+a {
+    display: block;
+    padding: 8px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+#main {
+    ffont-size: 48pt;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    top: 30%;
+    color: white;
+}
+
+#question {
+    color: white;
+    font-family: 'Caviar Dreams';
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+    lline-height: 20pt;
+}
+
+
+@keyframes fadein {
+    from { opacity: 0; font-size: 45pt;}
+    to   { opacity: 1; font-size: 48pt;}
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; font-size: 45pt;}
+    to   { opacity: 1; font-size: 48pt;}
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; font-size: 45pt;}
+    to   { opacity: 1; font-size: 48pt;}
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; font-size: 45pt;}
+    to   { opacity: 1; font-size: 48pt;}
+}
+
+
+hr {
+    width: 50%;
+    padding: 0px;
+    margin: auto;
+}
+
+#thread {
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+}
+#form {
+    width: 400px;
+    background-color: transparent;
+    padding: 0px;
+    margin: auto;
+    position: relative;
+    top: 10%;
+}
+
+input[type="text"]
+{
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 30pt;
+    outline: none;
+    text-align: center;
+    font-family: 'Raleway';
+
+}
+
+.trans--grow{
+    -webkit-transition: width 1s ease-out; /* For Safari 3.1 to 6.0 */
+    transition: width 1s  ease-out;
+    width : 0%;
+}
+
+.grow{
+    width:40%;
+}
+
+
+/*results page*/
+
+#results {
+    background-color: black;
+    line-height: 36pt;
+    font-size: 18pt;
+    color: white;
+    font-family: 'Caviar Dreams';
+    margin: auto;
+    text-align: center;
+}
+
+#resultbox {
+    margin: auto;
+    text-align: center;
+}
+
+
+
+/*details page*/
+
+#topline {
+    font-family: 'Raleway';
+    margin: auto;
+    font-size: 20pt;
+    text-align: center;
+}
+
+.label {
+    background-color: black;
+    font-size: 20pt;
+    color: white;
+}
+
+.box {
+    background-color: black;
+    font-size: 20pt;
+    color: white;
+}
+
+#detailbox {
+    font-size: 30pt;
+    float: right;
+    margin-right: 100px;
+    margin-top: 50px;
+    color: white;
+    border-style: solid;
+    border-color: white;
+    width: 400px;
+    padding: 10px;
+    font-family: 'Raleway';
+
+}
+
+.mappic {
+    width: 400px;
+}
+
+.mapicon {
+    width: 50px;
+}
+#icon2{
+    float:left;
+    width:20%;
+    margin-left:10%;
+    margin-top:-3%;
+
+}
+
+#pin{
+    width:20%;
+    float:right;
+}
+
+/*login page*/
+
+#loginpage {
+    margin: auto;
+    text-align: center;
+    font-size: 36pt;
+    padding: 100px;
+}
+
+#loginform {
+    text-align: center;
+}
+
+#loginform input[type=text] {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 36pt;
+    float: center;
+    margin: auto;
+    font-family: Raleway;
+    src: url(/raleway/raleway-Medium.ttf);
+}
+
+#loginform input[type=password] {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 36pt;
+    text-align: center;
+    margin: auto;
+}
+
+#loginform input[type=submit] {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 36pt;
+    text-align: center;
+    margin: auto;
+}
+
+hr.login {
+    width: 400px;
+    text-align: center;
+}
+
+/*signup page*/
+
+
+#signuppage {
+
+    margin: auto;
+    text-align: center;
+    font-size: 30pt;
+}
+
+#signupform {
+    text-align: center;
+
+}
+
+#signupform input[type=text] {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 36pt;
+    float: center;
+    margin: auto;
+    font-family: Raleway;
+    src: url(/raleway/raleway-Medium.ttf);
+}
+
+#signupform input[type=password] {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 36pt;
+    text-align: center;
+    margin: auto;
+}
+
+
+hr.signup {
+    width: 400px;
+    text-align: center;
+}
+
+/*start page*/
+
+
+input[type=submit] {
+    padding: 5px 15px;
+    background: #fff100;
+    border: 0 none;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 12pt;
+}
+
+/*the team*/
+#outerBox{
+    background-color:black;
+    height:96%;
+    /*margin:auto;*/
+    text-align: center;
+    color:#fff100;
+    font-family: 'Caviar Dreams';
+    font-size:50pt;
+
+}
+
+.personBox{
+    width:27.33%;
+    color:white;
+    font-family: 'Caviar Dreams';
+    font-size:18pt;
+    float:left;
+    margin: 3%;
+    text-align: center;
+    line-height: 17pt !important;
+}
+
+
+.mission{
+    width:80%;
+    color:white;
+    font-family: 'Caviar Dreams';
+    font-size:18pt;
+    padding-right: 10%;
+    padding-left: 10%;
+    text-align: center;
+}
+
+.profpic{
+    width: 60%;
+}
+
+.desBox{
+    color:white;
+    font-size:12pt;
+    font-family: Raleway;
+}
+
+.heading {
+    font-family: 'Caviar Dreams';
+    text-align: center;
+    width: 100%;
+    color: #fff100;
+}
+
+/*contact us*/
+
+#message {
+    text-align:center;
+    color:#fff100;
+    font-family: Raleway;
+    font-size: 18pt;
+    line-height: 15px;
+    width: 100%;
+}
+
+#contactBox{
+    margin: auto;
+    width:100%;
+    height:65%;
+    text-align:center;
+    color:white;
+    font-family: Raleway;
+    font-size: 18pt;
+    line-height: 30px;
+}
+
+#formBox{
+    width:50%;
+    padding:1%;
+    color: black;
+    font-size:18pt;
+    font-family: 'Caviar Dreams';
+}
+
+#textBox{
+    width:50%;
+    height:30%;
+    padding:1%;
+    font-size:18pt;
+    font-family:Raleway;
+}
+
+#submitButton{
+    font-family: Raleway;
+    font-size: 18pt;
+    padding: 1%;
+}
+
+#where{
+    font-size: 40pt;
+}
+
+
+
+
+@media screen and (max-width: 705px){
+    #where{
+        font-size: 25pt;
+    }
+
+}
+
+@media screen and (max-width: 443px){
+
+    .logo{
+        font-size: 11pt;
+    }
+}

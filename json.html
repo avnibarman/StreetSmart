@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery.getJSON demo</title>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+<script>
+$.getJSON( "geo.geojson", function(data ) {
+var names = [];
+var coordinates = [];
+  $.each( data.features, function(key, value) {
+    names.push(value.properties.name);
+  });
+
+  $.each( data.features, function(key, value) {
+    coordinates.push(value.geometry.coordinates);
+  });
+
+for (x=0; x < names.length; x++){
+  document.getElementById('text').innerHTML = names[x] + "</br>";
+}
+
+  //console.log(coordinates);
+
+  var data = [];
+
+  for (i=0; i < names.length; i++){
+    data.push(
+      {
+        name: names[i],
+        coordinates: coordinates[i]
+      }
+    );
+  }
+
+console.log(data);
+
+    // var mapped = data.map(function(data){
+    //   return {
+    //     name: data.features.properties.name,
+    //     coordinates: data.features.geometry.coordinates
+    //   };
+    // });
+    //
+    // console.log(mapped);
+
+});
+</script>
+
+<div id="text">
+</div>
+</body>
+</html>
